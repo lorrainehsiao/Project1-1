@@ -12,7 +12,8 @@
 # language       R                            
 # version.string R version 2.15.1 (2012-
 
-# Before running this R code, download all of the txt files in the repo: Visual, Aural, ReadWrite, and Kinesthetic, and truefalse
+# Before running this R code, run  Sys.getenv("HOME"). This will return a file path.
+Download all of the txt files in the repo to the last directory in the file path: Visual, Aural, ReadWrite, and Kinesthetic, and truefalse
 
 setwd(Sys.getenv("HOME"));
 visual_data = read.table("Visual.txt", sep = "")
