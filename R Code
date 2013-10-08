@@ -12,7 +12,7 @@
 # language       R                            
 # version.string R version 2.15.1 (2012-
 
-
+# Before running this R code, download all of the txt files in the repo: Visual, Aural, ReadWrite, and Kinesthetic
 
 setwd(Sys.getenv("HOME"));
 visual_data = read.table("Visual.txt", sep = "")
@@ -26,9 +26,13 @@ readwrite_data = factor(readwrite_data$V2, levels = 1:15)
 kinesthetic_data = factor(kinesthetic_data$V2, levels = 1:15)
 
 attach(mtcars)
-par(mfrow=c(5,1))
+par(mfrow=c(4,1))
 
 plot(visual_data, col = 'blue', main = "Number of People in each Category for Visual Learning", xlab = "Categories", ylab = "Number of People", xlim = c(0,15), width = .85)
 plot(aural_data, col = 'orange', main = "Number of People in each Category for Aural Learning", xlab = "Categories", ylab = "Number of People", xlim = c(0,15), width = .85)
 plot(readwrite_data, col = 'yellow', main = "Number of People in each Category for Read/Write Learning", xlab = "Categories", ylab = "Number of People", xlim = c(0,15), width = .85)
 plot(kinesthetic_data, col = 'red', main = "Number of People in each Category for Kinesthetic Learning", xlab = "Categories", ylab = "Number of People", xlim = c(0,15), width = .85)
+
+par(mfrow=c(1,1))
+data = data.frame(table(visual_data), table(aural_data), table(readwrite_data), table(kinesthetic_data))
+matplot(data, type = "l")
