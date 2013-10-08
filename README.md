@@ -29,5 +29,5 @@ your browser and enter your specific ip address, which can be found in the setti
 
 ###Visuals
 
-Download all of the txt files in the repo: Visual, Aural, ReadWrite, and Kinesthetic
+Download all of the txt files in the repo: Visual, Aural, ReadWrite, and Kinesthetic. 
 In order to see the visuals, run the R code in: R Code 
