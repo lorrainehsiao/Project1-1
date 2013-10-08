@@ -27,4 +27,7 @@ for a tutorial of how to use vi if you don't already know how to do so.
 ipython notebook --no-browser --ip=0.0.0.0 ###This initiates ipython notebook in your browser. To access it, open up 
 your browser and enter your specific ip address, which can be found in the settings of your virtual box.
 
+###Visuals
 
+Download all of the txt files in the repo: Visual, Aural, ReadWrite, and Kinesthetic
+In order to see the visuals, run the R code in: R Code 
