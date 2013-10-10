@@ -14,11 +14,14 @@ Qi Zhang
 ####In Virtual Machine:
 Get the VirtualBox running by logging in. You will need to run the following commands:
 
+
+```sh
 sudo apt-get install ipython ipython-notebook python-pip
 
 sudo pip install gspread
 
 sudo apt-get install python-pandas
+```
 
 vi ~/stat157.cfg  ### Edit the code so that it contains your username and password. This will open up the vi editor. 
 You want stat157.cfg to have the same format as the one shown in this repository. Type vimtutor in your virtual machine 
